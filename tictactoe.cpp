@@ -16,18 +16,17 @@ class Board{
 			cout << "\n";
 			cout << " ---+---+---" << endl; 
 			cout << "| " << arr[0] << " | " << arr[1] << " | " << arr[2] << " |" << endl;
-	        cout << " ---+---+---" << endl;
-	        cout << "| " << arr[3] << " | " << arr[4] << " | " << arr[5] << " |" << endl;
-	        cout << " ---+---+---" << endl;
-	        cout << "| " << arr[6] << " | " << arr[7] << " | " << arr[8] << " |" << endl;
-	        cout << " ---+---+---" << endl;
-	        cout << "\n";
+			cout << " ---+---+---" << endl;
+			cout << "| " << arr[3] << " | " << arr[4] << " | " << arr[5] << " |" << endl;
+			cout << " ---+---+---" << endl;
+			cout << "| " << arr[6] << " | " << arr[7] << " | " << arr[8] << " |" << endl;
+			cout << " ---+---+---" << endl;
+			cout << "\n";
 		}
 
 		void reset_board(){
 			for(int i=0; i<9; i++){
 				arr[i] = " ";
-
 			}
 		}
 
@@ -39,7 +38,6 @@ class Board{
 				return false;
 			}
 			return true;
-
 		}
 
 		void update_board(int input, string sym){
@@ -110,9 +108,9 @@ int main() {
 		int move = player_obj.get_move_human() - 1; // to align with indexing
 
 		while (!board_obj.check_availab(move)){
-            cout << "Invalid square. Enter your move again: ";
-            cin >> move;
-            move--;  // to align with indexing
+			cout << "Invalid square. Enter your move again: ";
+			cin >> move;
+			move--;  // to align with indexing
 		}
 
 		// updating board
