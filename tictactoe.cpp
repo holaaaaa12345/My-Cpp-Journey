@@ -8,6 +8,7 @@ There are two classes:
 The function names are self-explanatory, no comments needed :p */
 
 class Board{
+
     public:
     	string arr[9] = {};
 
@@ -54,8 +55,8 @@ class Board{
 };
 
 class Player{
+	
 	public:
-
 		string current_player = "X";
 
 		int get_move_human(){
