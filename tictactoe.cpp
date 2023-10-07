@@ -9,19 +9,19 @@ The function names are self-explanatory, no comments needed :p */
 
 class Board{
     public:
-	    string arr[9] = {};
+    	string arr[9] = {};
 
-        void show_board(){  // Manual board creation :p
-		    cout << "\n";
-		    cout << " ---+---+---" << endl; 
-		    cout << "| " << arr[0] << " | " << arr[1] << " | " << arr[2] << " |" << endl;
-		    cout << " ---+---+---" << endl;
-		    cout << "| " << arr[3] << " | " << arr[4] << " | " << arr[5] << " |" << endl;
-		    cout << " ---+---+---" << endl;
-		    cout << "| " << arr[6] << " | " << arr[7] << " | " << arr[8] << " |" << endl;
-		    cout << " ---+---+---" << endl;
-		    cout << "\n";
-        }
+		void show_board(){  // Manual board creation :p
+			cout << "\n";
+			cout << " ---+---+---" << endl; 
+			cout << "| " << arr[0] << " | " << arr[1] << " | " << arr[2] << " |" << endl;
+			cout << " ---+---+---" << endl;
+			cout << "| " << arr[3] << " | " << arr[4] << " | " << arr[5] << " |" << endl;
+			cout << " ---+---+---" << endl;
+			cout << "| " << arr[6] << " | " << arr[7] << " | " << arr[8] << " |" << endl;
+			cout << " ---+---+---" << endl;
+			cout << "\n";
+		}
 
 		void reset_board(){
 			for(int i=0; i<9; i++){
